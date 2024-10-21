@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enroll Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        .form-container input, .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-container input:focus, .form-container select:focus {
+            border-color: #8a8a8a;
+        }
+        .form-container button {
+            background-color: #c89e46;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .form-container button:hover {
+            background-color: #b4883b;
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form>
+            <input type="text" placeholder="Full Name*" required>
+            <input type="tel" placeholder="Phone Number*" required>
+            <input type="email" placeholder="Email Address*" required>
+            <input type="text" placeholder="City*" required>
+            <select required>
+                <option value="" disabled selected>UG/PG Stream*</option>
+                <option value="UG">Undergraduate</option>
+                <option value="PG">Postgraduate</option>
+            </select>
+            <input type="number" placeholder="Year of Pass out." required>
+            <button  type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
